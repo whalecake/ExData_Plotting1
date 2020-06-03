@@ -14,3 +14,7 @@ hist(power$Global_active_power,
      xlab = "Global Active Power (kilowatts)",
      ylab = "Frequency",
      main = "Global Active Power")
+
+# save as png
+dev.copy(png, 'plot1.png', width = 480, height = 480)
+dev.off()
